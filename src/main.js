@@ -1,6 +1,6 @@
 'use strict';
 
-import { startServer } from './lib/server';
+import { serverStart } from './lib/server';
 import logger from './lib/logger';
 
-startServer(process.env.PORT, () => logger.log(logger.INFO, `MAIN - server running on port ${process.env.PORT}`));
+serverStart(process.env.PORT, () => logger.log(logger.INFO, `MAIN - server running on port ${process.env.PORT}`));
