@@ -37,7 +37,6 @@ storeRouter.get('/api/v1/stores/:id', (request, response, next) => {
     .catch(next);
 });
 
-// GET all
 storeRouter.get('/api/v1/stores', (request, response, next) => {
   return Store.find()
     .then((stores) => {
